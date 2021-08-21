@@ -1,0 +1,43 @@
+.bookitem {
+  margin-right: 40px;
+  margin-top: 50px;
+  width: 350px;
+  min-height: 420px;
+  background-color: rgba(0, 0, 0, 0.055);
+  cursor: pointer;
+}
+
+.bookitem img {
+  display: block;
+  width: 150px;
+  height: 225px;
+  margin: 0 auto;
+  margin-top: 40px;
+  box-shadow: 12px 9px 18px 1px rgba(34, 60, 80, 0.35);
+}
+
+.type {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #777;
+  text-decoration: underline;
+}
+
+.bookname {
+  margin-top: 20px;
+  width: 80%;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.authorname {
+  width: 100%;
+  color: #777;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.ml20 {
+  margin-left: 20px;
+}

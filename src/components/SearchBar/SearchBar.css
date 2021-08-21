@@ -1,0 +1,46 @@
+.searchbar {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.searchbar input {
+  font-size: 22px;
+  padding-left: 10px;
+  font-weight: 700;
+  width: 600px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.sortbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.sortbar p {
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-right: 5px;
+}
+.sortbar select {
+  width: 225px;
+  height: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.mr25 {
+  margin-right: 25px;
+}

@@ -1,0 +1,84 @@
+.bigbookitem {
+  height: 660px;
+  width: 100%;
+  display: flex;
+}
+
+.bigbookimage {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.bigbookimage img {
+  display: block;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+  box-shadow: 12px 9px 18px 1px rgba(34, 60, 80, 0.35);
+}
+
+.bigbooktype,
+.bigbookname,
+.bigbookauthor,
+.bigbookdescr {
+  margin-left: 60px;
+}
+
+.bigbookcontent {
+  width: 60%;
+}
+
+.bigbooktype {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.bigbookname {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.bigbookauthor {
+  font-size: 18px;
+  color: #777;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.bigbookdescr {
+  padding: 25px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid rgba(104, 104, 104, 0.25);
+  width: 800px;
+  height: 250px;
+}
+
+.myButton {
+  box-shadow: 0px 6px 14px -7px #444c4d;
+  background: linear-gradient(to bottom, #afd2de 5%, #3d484a 100%);
+  background-color: #777;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  margin-right: 52%;
+  font-weight: bold;
+  padding: 12px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #303a3d;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
