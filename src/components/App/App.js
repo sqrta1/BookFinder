@@ -10,8 +10,8 @@ import ResultsAmount from '../ResultsAmount/ResultsAmount'
 
 import './App.css';
 
-const apiKey = 'AIzaSyBLNWUM3ajMQcZv68tQOAGoCnKUObVylfE';
-const OFFSET_SIZE = 30;
+const apiKey = ''; // put your apiKey https://developers.google.com/books/docs/v1/using#APIKey
+const OFFSET_SIZE = 30; // min is 10, max is 40; more or less gonna get you an error
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [pickedItem, setPickedItem] = useState('');
 
-  function handleSubmit(e) {
+  function handleSubmit(e) { // setting book state as word you wrote after submitting
     e.preventDefault();
     setBook(e.target[0].value);
     setOffset(0);
@@ -34,7 +34,7 @@ function App() {
 
   useEffect(() => {
     function googleApiSearch() {
-      if (book === "") {
+      if (book === "") { 
         return;
       }
       setIsLoaded(true);
@@ -53,7 +53,7 @@ function App() {
             return;
           }
           const booksResult = data.data.items.map((item) => {
-            if (!item.volumeInfo.imageLinks) {
+            if (!item.volumeInfo.imageLinks) { // if there is no thumbnial, we use our own thumbnail 
               item.volumeInfo = {...item.volumeInfo, imageLinks: { thumbnail: "/notavailable.jpg"}}
             }
             return item;
@@ -67,7 +67,7 @@ function App() {
     }
     googleApiSearch();
   }, [sort, category, book, offset])
-  function handleSort(e) {
+  function handleSort(e) { 
     setSort(e.target.value);
     setOffset(0);
     setResult([])
